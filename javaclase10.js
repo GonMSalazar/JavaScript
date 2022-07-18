@@ -17,36 +17,32 @@ let concatenaNumeros = numeroString1 + numeroString2 + numeroString3;
 
 console.log(concatenaNumeros);
 
-
 var nombre1 = prompt("Cuál es tu nombre?");
 
 console. warn(nombre1)
 
-var genero = prompt('Tu género es masculino o femenino?');
+sexo = prompt ('Introduce tu sexo')
 
-console.log (genero)
+if (sexo == 'masculino'){
+    alert('podes entrar si sos mayor de 18');
 
-console.warn(genero)
-
-
-var edad = prompt('Cuántos años tienes?');
-
-console.log(edad)
-
-console.warn(edad)
-
-if (genero == 'masculino'){
+    edad = prompt("Introduce tu edad");
     if (edad >= 18){
-      alert('Puedes entrar, eres mayor de edad.');
-     } else {
-      alert('No puedes entrar, eres menor de edad.');
-     }
-  }
-  if (genero == 'femenino') {
-    if (edad >= 20){
-          alert('Puedes entrar, eres mayor de edad.');
-         } else {
-          alert('No puedes entrar, eres menor de edad.');
-         }
-        }
+        alert("Puedes entrar, eres mayor de edad.");
+       } else {
+        alert("No puedes entrar, eres menor de edad.");
+       }
+}
 
+else if(sexo == 'femenino'){
+    alert('mujeres solo mayores de 20');
+
+    edad = prompt("Introduce tu edad");
+    if (edad >= 20){
+        alert("Puedes entrar, eres mayor de edad.");
+       } else {
+        alert("No puedes entrar, eres menor de edad.");
+       }
+}else{
+    alert('no has introducido tu sexo correctamente')
+}
